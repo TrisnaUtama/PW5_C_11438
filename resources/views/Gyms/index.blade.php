@@ -93,6 +93,48 @@
                 </div>
                 <!-- row -->
             </div>
+            <h1>Gofit Promo</h1>
+            <div class="row align-items-center mt-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h3> Promo {{ $pack1['jenis'] }}</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><span class="fw-bold">Jenis Promo</span>: {{ $pack1['jenis'] }}<br>
+                            <span class="fw-bold">Minimal Pembelian</span>: {{ $pack1['minimal_pembelian'] }}<br>
+                            <span class="fw-bold">Jenis Promo</span>: {{ $pack1['bonus'] }}<br>
+                            <span class="fw-bold">Jenis Promo</span>: {{ $pack1['deskripsi'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h3> Promo {{ $pack2['jenis'] }} 1</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><span class="fw-bold">Jenis Promo</span>: {{ $pack2['jenis'] }}<br>
+                            <span class="fw-bold">Minimal Pembelian</span>: {{ $pack2['minimal_pembelian'] }}<br>
+                            <span class="fw-bold">Jenis Promo</span>: {{ $pack2['bonus'] }}<br>
+                            <span class="fw-bold">Jenis Promo</span>: {{ $pack2['deskripsi'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h3> Promo {{ $pack3['jenis'] }} 2</h3>
+                        </div>
+                        <div class="card-body">
+                            <p><span class="fw-bold">Jenis Promo</span>: {{ $pack3['jenis'] }}<br>
+                            <span class="fw-bold">Minimal Pembelian</span>: {{ $pack3['minimal_pembelian'] }}<br>
+                            <span class="fw-bold">Jenis Promo</span>: {{ $pack3['bonus'] }}<br>
+                            <span class="fw-bold">Jenis Promo</span>: {{ $pack3['deskripsi'] }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <h1>Fasilitas Kelas Gofit</h1>
             <table class="table-striped border-dark table text-center">
                 <tr class="">

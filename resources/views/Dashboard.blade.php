@@ -20,6 +20,25 @@
 
     <body class="hold-transition sidebar-mini">
         <div class="wrapper">
+            {{-- Modal --}}
+                <div class="modal fade" id="exampleModal" tabindex="" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header bg-primary">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah Yakin Logout?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <a type="button" class="btn btn-danger" href="{{ url('Login') }}">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{-- End of Modal --}}
             <!-- Navbar -->
             <nav class="main-header navbar navbar-expand navbar-white navbar-light">
                 <!-- Left navbar links -->
@@ -34,7 +53,8 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Navbar Search -->
                     <li class="nav-item d-flex align-items-center">
-                        <button class="btn btn-sm btn-danger">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
                             <i class="fa-solid fa-right-from-bracket"></i> Logout
                         </button>
                         <div class="navbar-search-block">
@@ -104,6 +124,12 @@
                                     <p> Home</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ url('presensi') }}" class="nav-link">
+                                    <i class="nav-icon far fa-circle"></i>
+                                    <p> Presensi Member</p>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                     <!-- /.sidebar-menu -->
@@ -122,7 +148,8 @@
                     [ 210711438 ]
                 </div>
                 <!-- Default to the left -->
-                <strong>Copyright &copy; {{ date('Y') }} <a href="#">Gofit</a>. </strong> All rights reserved.
+                <strong>Copyright &copy; {{ date('Y') }} <a href="#">Gofit</a>. </strong> All rights
+                reserved.
             </footer>
         </div>
         <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
