@@ -21,7 +21,7 @@
     <body class="hold-transition sidebar-mini">
         <div class="wrapper">
             {{-- Modal --}}
-                <div class="modal fade" id="exampleModal" tabindex="" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="exampleModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-sm">
                         <div class="modal-content">

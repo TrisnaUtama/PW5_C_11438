@@ -21,25 +21,27 @@
     <body class="hold-transition sidebar-mini">
         <div class="wrapper">
             {{-- Modal --}}
-            <div class="modal fade" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-sm">
-                    <div class="modal-content">
-                        <div class="modal-header bg-primary">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Apakah Yakin Logout?</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-secondary"
-                                data-bs-dismiss="modal">Close</button>
-                            <a type="button" class="btn btn-danger" href="{{ url('Login') }}">Logout</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- Button trigger modal -->
 
-            <div class="modal" id="exampleModal2" tabindex="" aria-labelledby="exampleModalLabel2"
+            <!-- Modal -->
+           <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Apakah Yakin Logout?</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                     <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <a type="button" class="btn btn-danger" href="{{ url('Login') }}">Logout</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            <div class="modal" id="exampleModal2" tabindex="" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel2"
                 aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -80,15 +82,14 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Navbar Search -->
                     <li class="nav-item d-flex align-items-center">
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <i class="fa-solid fa-right-from-bracket"></i> Logout
                         </button>
                         <div class="navbar-search-block">
                             <form class="form-inline">
                                 <div class="input-group input-group-sm">
-                                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
-                                        aria-label="Search">
+                                    <input class="form-control form-control-navbar" type="search"
+                                        placeholder="Search" aria-label="Search">
                                     <div class="input-group-append">
                                         <button class="btn btn-navbar" type="submit">
                                             <i class="fas fa-search"></i>
@@ -238,6 +239,7 @@
                             Metode Pembayaran : <span class="badge bg-primary">Deposit Kelas</span>
                             </p>
                     </div>
+                    </p>
                     @endif
                     </a>
                 </div>
